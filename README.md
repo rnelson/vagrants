@@ -19,7 +19,7 @@ had to look up a lot of administration commands.
 To simplify environment setup, I've created two repositories:
 
 + [vagrants](https://github.com/rnelson/vagrants), with Vagrant configs
-+ [rsetup](https://github.com/rnelson/rsetup), with scripts to ease setting up extra software
++ [rsetup](https://github.com/rnelson/rsetup/tree/freebsd-10.1), with scripts to ease setting up extra software
 
 ## Usage
 
