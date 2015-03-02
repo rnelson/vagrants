@@ -28,7 +28,7 @@ To use this, simply add this branch as a submodule (be sure to commit the
 example:
 
 ```
-proj$ git init .
+proj$ git init
 proj$ git submodule add -b freebsd-10.1-amd64 --name vagrant https://github.com/rnelson/vagrants.git vagrant
 proj$ cat > vm.sh <<EOF
 > #!/bin/sh
