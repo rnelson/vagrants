@@ -5,7 +5,8 @@ Vagrant.configure(2) do |config|
   config.vm.guest = :freebsd
   config.vm.box = "arkadi/freebsd-10.1-amd64"
   config.vm.network "private_network", ip: "10.0.1.10"
-
+  config.ssh.keep_alive = true
+  
   config.vm.synced_folder "../", "/vagrant", :nfs => true, id: "vagrant-root"
   
   config.vm.provider :virtualbox do |vb|
