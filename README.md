@@ -41,5 +41,13 @@ proj/vagrant$ vagrant ssh
 
 This will set up a Vagrant VM with FreeBSD 10.1/amd64 and install Python 3.
 
+## Bugs
+
+SSH sessions time out at the moment. May just be a keepalive setting, may be
+more.
+
+Putting the host to sleep breaks the VM. Use `vagrant halt` to shut it down
+before putting your system to sleep.
+
 [Vagrant]: http://vagrantup.com
 [FreeBSD]: http://freebsd.org
