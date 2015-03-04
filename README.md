@@ -43,8 +43,6 @@ and call its `#configure`. The method takes a single argument, the config object
 from Vagrant. This allows you to specify any Vagrant configuration options you
 wish.
 
-This will set up a Vagrant VM with FreeBSD 10.1/amd64 and install Python 3.
-
 ## Bugs
 
 SSH sessions time out at the moment. May just be a keepalive setting, may be
