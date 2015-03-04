@@ -43,6 +43,9 @@ and call its `#configure`. The method takes a single argument, the config object
 from Vagrant. This allows you to specify any Vagrant configuration options you
 wish.
 
+See [this commit](https://bitbucket.org/rossnelson/localomaha/commits/8f3aa5bb88a90b1c4e7b505ec0c7c82a13d04a1a)
+as a real-world example of implementing this project.
+
 ## Bugs
 
 SSH sessions time out at the moment. May just be a keepalive setting, may be
