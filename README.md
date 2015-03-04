@@ -30,14 +30,18 @@ example:
 ```
 proj$ git init
 proj$ git submodule add -b freebsd-10.1-amd64 --name vagrant https://github.com/rnelson/vagrants.git vagrant
-proj$ cat > vm.sh <<EOF
-> #!/bin/sh
-> /usr/local/bin/rsetup python3
-> EOF
+proj$ cp vagrant/vm.rb.example vm.rb
+proj$ vi vm.rb
 proj$ cd vagrant
 proj/vagrant$ vagrant up
 proj/vagrant$ vagrant ssh
 ```
+
+`vm.rb` needs to contain class `VagrantConfig` with method `configure(config)`.
+If `vm.rb` is found in the parent folder, it will look for class `VagrantConfig`
+and call its `#configure`. The method takes a single argument, the config object
+from Vagrant. This allows you to specify any Vagrant configuration options you
+wish.
 
 This will set up a Vagrant VM with FreeBSD 10.1/amd64 and install Python 3.
 
